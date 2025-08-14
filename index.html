@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, My Love ❤️</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" as="audio" href="music/background.mp3">
+</head>
+<body>
+
+  <!-- Music -->
+  <audio id="bg-music" src="music/background.mp3" preload="auto" loop></audio>
+  <button id="music-btn" aria-label="Toggle music">🔊</button>
+
+  <!-- Welcome -->
+  <section id="welcome">
+    <div class="overlay"></div>
+    <div class="welcome-inner">
+      <h1 id="typewriter" class="title"></h1>
+      <p class="subtitle">Scroll down for a little journey… ✨</p>
+    </div>
+  </section>
+
+  <!-- Memories -->
+  <section id="memories">
+    <h2 class="section-title">Our Memories ❤️</h2>
+
+    <div class="gallery">
+      <div class="photo-container">
+        <img src="images/photo1.jpg" class="photo" alt="Memory 1">
+        <p class="caption">Happy Birthday, my world 🎂</p>
+      </div>
+
+      <div class="photo-container">
+        <img src="images/photo2.jpg" class="photo" alt="Memory 2">
+        <p class="caption">Your smile is my sunrise ☀️</p>
+      </div>
+
+      <div class="photo-container">
+        <video class="photo" controls playsinline>
+          <source src="video/memory1.mp4" type="video/mp4">
+        </video>
+        <p class="caption">Every moment with you feels like magic ✨</p>
+      </div>
+
+      <div class="photo-container">
+        <img src="images/photo3.jpg" class="photo" alt="Memory 3">
+        <p class="caption">You’re my favorite place to be 🏡</p>
+      </div>
+
+      <div class="photo-container">
+        <video class="photo" controls playsinline>
+          <source src="video/memory2.mp4" type="video/mp4">
+        </video>
+        <p class="caption">Our laughter is my favorite song 🎶</p>
+      </div>
+
+      <div class="photo-container">
+        <img src="images/photo4.jpg" class="photo" alt="Memory 4">
+        <p class="caption">You make my heart glow 💖</p>
+      </div>
+
+      <div class="photo-container">
+        <img src="images/photo5.jpg" class="photo" alt="Memory 5">
+        <p class="caption">With you, forever feels natural 🌙</p>
+      </div>
+
+      <div class="photo-container">
+        <img src="images/photo6.jpg" class="photo" alt="Memory 6">
+        <p class="caption">Let’s write our forever story 📖</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proposal -->
+  <section id="proposal">
+    <div class="proposal-card">
+      <h2 class="proposal-title">Will you marry me? 💍</h2>
+      <div class="buttons">
+        <button id="yes-btn" class="btn yes">YES ❤️</button>
+        <button id="no-btn" class="btn no">NO 😢</button>
+      </div>
+      <p id="proposal-message" class="proposal-message"></p>
+      <canvas id="fireworks"></canvas>
+    </div>
+  </section>
+
+  <!-- Floating hearts will be injected via JS -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
